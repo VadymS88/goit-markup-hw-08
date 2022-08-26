@@ -173,12 +173,18 @@ li {
 /*Portfolio btn*/
 .btn-filter {
   display: flex;
-  width: 545px;
+  justify-content: center;
+  gap: 8px;
   padding-top: 94px;
   margin: 0 auto;
   margin-bottom: 34px;
 }
 .btn {
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  border-radius: 4px;
   color: var(--color-type-b);
   background-color: var(--color-type-c);
   font-family: "Roboto";
