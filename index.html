@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -41,12 +41,14 @@
         </nav>
         <ul class="container-contact">
           <li>
-            <a class="contact link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <a class="contact link " href="mailto:info@devstudio.com"
+              >info@devstudio.com</a>
+              <svg class="contact-mail" width="16" height="12" 
+              <use href="./images/sprite.svg#icon-mail"></use>
+          </svg>
           </li>
           <li>
-            <a class="contact link tlf" href="tel:+380961111111"
+            <a class="contact contact-tlf link tlf" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </li>
@@ -69,13 +71,23 @@
           <h2 class="heading">Наші переваги</h2>
           <ul class="section-titel-list">
             <li>
-              <h3 class="section-titel">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <div class="div-icons-titel">
+              <svg class="icons-titel"  width="270" height="120">
+                <use href="./images/icons.svg#icon-antenna"></use>
+              </svg>
+              </div>
+              <h3 class="section-titel titel-attention">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="section-item">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
             <li>
+              <div class="div-icons-titel">
+              <svg class="icons-titel"  width="270" height="120">
+                <use href="./images/icons.svg#icon-antenna"></use>
+              </svg>
+              </div>
               <h3 class="section-titel">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="section-item">
                 Завдання організації, особливо рамки і місце навчання кадрів
@@ -83,12 +95,22 @@
               </p>
             </li>
             <li>
+              <div class="div-icons-titel">
+              <svg class="icons-titel"  width="270" height="120">
+                <use href="./images/icons.svg#icon-antenna"></use>
+              </svg>
+              </div>
               <h3 class="section-titel">ПЛАНУВАННЯ</h3>
               <p class="section-item">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li>
+              <div class="div-icons-titel">
+              <svg class="icons-titel"  width="270" height="120">
+                <use href="./images/icons.svg#icon-antenna"></use>
+              </svg>
+              </div>
               <h3 class="section-titel">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="section-item">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -148,6 +170,19 @@
               <div class="team-name">
                 <h3 class="team-person-name">Ігор Дем'яненко</h3>
                 <p class="team-text" lang="en">Product Designer</p>
+              <ul>
+                <li class="social-media">
+                  <a href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram">
+                  </use>
+                </svg>
+                </a>
+                </li>
+              </ul>
               </div>
             </li>
             <li class="team-list">
@@ -188,6 +223,59 @@
                 <h3 class="team-person-name">Михайло Єрмаков</h3>
                 <p class="team-text" lang="en">UI Designer</p>
               </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="client-titel">Постійні клієнти</h2>
+          <ul class="container-client">
+            <li class="client-list">
+              <svg width="170" height="92">
+                <use href="./images/symbol-defs.svg#icon-Client-1">
+                </use>
+              </svg>
+            </li>
+            <li class="client-list">
+              <img
+                src="./images/client/Client 2.jpg"
+                alt="logo-client"
+                width="170"
+                height="92"
+              />
+            </li>
+            <li class="client-list">
+              <img
+                src="./images/client/Client 3.jpg"
+                alt="logo-client"
+                width="170"
+                height="92"
+              />
+            </li>
+            <li class="client-list">
+              <img
+                src="./images/client/Client 4.jpg"
+                alt="logo-client"
+                width="170"
+                height="92"
+              />
+            </li>
+            <li class="client-list">
+              <img
+                src="./images/client/Client 5.jpg"
+                alt="logo-client"
+                width="170"
+                height="92"
+              />
+            </li>
+            <li class="client-list">
+              <img
+                src="./images/client/Client 6.jpg"
+                alt="logo-client"
+                width="170"
+                height="92"
+              />
             </li>
           </ul>
         </div>
