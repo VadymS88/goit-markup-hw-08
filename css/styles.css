@@ -347,7 +347,9 @@ img {
   letter-spacing: 0.03em;
 }
 .social-media{
-
+display: flex;
+align-items: center;
+justify-content: center;
 }
 /*Client*/
 .section-client {
