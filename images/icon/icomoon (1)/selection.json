@@ -41,7 +41,7 @@
         }
       ],
       "properties": {
-        "order": 81,
+        "order": 101,
         "id": 3,
         "name": "antenna",
         "prevSize": 32
@@ -280,7 +280,7 @@
         }
       ],
       "properties": {
-        "order": 82,
+        "order": 102,
         "id": 2,
         "name": "astronaut",
         "prevSize": 32
@@ -349,7 +349,7 @@
         }
       ],
       "properties": {
-        "order": 83,
+        "order": 103,
         "id": 1,
         "name": "clock",
         "prevSize": 32
@@ -428,7 +428,7 @@
         }
       ],
       "properties": {
-        "order": 84,
+        "order": 104,
         "id": 0,
         "name": "diagram",
         "prevSize": 32
@@ -451,7 +451,7 @@
       },
       "attrs": [],
       "properties": {
-        "order": 85,
+        "order": 105,
         "id": 2,
         "name": "mail",
         "prevSize": 32
@@ -475,7 +475,7 @@
       },
       "attrs": [],
       "properties": {
-        "order": 86,
+        "order": 106,
         "id": 1,
         "name": "smartphone",
         "prevSize": 32
@@ -500,7 +500,7 @@
       },
       "attrs": [],
       "properties": {
-        "order": 87,
+        "order": 107,
         "id": 10,
         "name": "instagram",
         "prevSize": 32
@@ -523,9 +523,9 @@
       },
       "attrs": [],
       "properties": {
-        "order": 88,
+        "order": 108,
         "id": 0,
-        "name": "twiter",
+        "name": "tviter",
         "prevSize": 32
       },
       "setIdx": 1,
@@ -546,7 +546,7 @@
       },
       "attrs": [],
       "properties": {
-        "order": 89,
+        "order": 109,
         "id": 11,
         "name": "facebook",
         "prevSize": 32
@@ -571,7 +571,7 @@
       },
       "attrs": [],
       "properties": {
-        "order": 90,
+        "order": 110,
         "id": 9,
         "name": "linkdn",
         "prevSize": 32
@@ -594,7 +594,7 @@
       },
       "attrs": [],
       "properties": {
-        "order": 91,
+        "order": 111,
         "id": 8,
         "name": "Logo",
         "prevSize": 32
@@ -635,7 +635,7 @@
       },
       "attrs": [],
       "properties": {
-        "order": 92,
+        "order": 112,
         "id": 7,
         "name": "Logo1",
         "prevSize": 32
@@ -670,7 +670,7 @@
       },
       "attrs": [],
       "properties": {
-        "order": 93,
+        "order": 113,
         "id": 6,
         "name": "Logo2",
         "prevSize": 32
@@ -696,7 +696,7 @@
       },
       "attrs": [],
       "properties": {
-        "order": 94,
+        "order": 114,
         "id": 5,
         "name": "Logo3",
         "prevSize": 32
@@ -728,7 +728,7 @@
       },
       "attrs": [],
       "properties": {
-        "order": 95,
+        "order": 115,
         "id": 4,
         "name": "Logo4",
         "prevSize": 32
@@ -768,7 +768,7 @@
       },
       "attrs": [],
       "properties": {
-        "order": 96,
+        "order": 116,
         "id": 3,
         "name": "Logo5",
         "prevSize": 32
@@ -797,7 +797,7 @@
       "embed": false
     },
     "imagePref": {
-      "prefix": "icon-",
+      "prefix": "",
       "png": false,
       "useClassSelector": true,
       "color": 0,
