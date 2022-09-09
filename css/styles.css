@@ -108,7 +108,7 @@ li {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--color-type-b);
-  transition-property: background-color;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -178,17 +178,15 @@ li {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  transition-property: background-color;
+  transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .contact:hover,
 :focus {
   color: var(--color-type-a);
   fill: var(--color-type-a);
 }
-
 .contact:hover .contact-mail {
   fill: var(--color-type-a);
 }
@@ -512,7 +510,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition-property: background-color;
+  transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
