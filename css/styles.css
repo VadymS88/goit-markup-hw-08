@@ -249,6 +249,7 @@ li {
 }
 
 /*Modal window*/
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -297,6 +298,156 @@ li {
 
   width: 11px;
   height: 11px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover .svg-modal-btn {
+  fill: var(--color-type-a);
+}
+/*.modal-window-text{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}*/
+.register-form-titel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-type-b);
+}
+.register-form-label {
+  display: block;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.register-form-field {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--color-page);
+}
+.register-form-group {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.register-form-input {
+  width: 100%;
+  height: 40px;
+  padding-right: 38px;
+  padding-left: 38px;
+  outline: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.register-form-input:focus {
+  border-color: var(--color-type-a);
+}
+.register-form-input:focus + .register-form-icon {
+  fill: var(--color-type-a);
+}
+.register-form-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.register-form-message {
+  width: 100%;
+  resize: none;
+  outline: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 18px;
+}
+.register-form-message::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+/*.form-field{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}*/
+.register-form-agreement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.register-form-checkbox {
+  margin-left: -35px;
+  visibility: hidden;
+}
+
+.register-form-agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.icon-checked {
+  opacity: 0;
+  fill: var(--color-type-a);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-form-checkbox:checked + .register-form-icons .icon-checked {
+  opacity: 1;
+}
+.icon-unchecked {
+  padding-left: 51px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-form-checkbox:checked + .register-form-icons .icon-unchecked {
+  opacity: 0;
+}
+
+.register-form-checkbox:focus + .register-form-icons {
+  outline: 2px solid rgb(56, 87, 107);
+  outline-offset: 1px;
+  border-radius: 2px;
+}
+
+.register-form-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  user-select: none;
+}
+
+.register-form-link {
+  color: var(--color-type-a);
+}
+.register-form-btn {
+  display: block;
+  margin: auto;
 }
 
 /*Portfolio btn*/
@@ -620,6 +771,7 @@ img {
   color: var(--color-adress-contact);
 }
 .footer-social {
+  margin-right: 93px;
 }
 .sociafl-link-footer {
   margin-left: 70px;
@@ -671,6 +823,37 @@ img {
 }
 .social-link-footer:focus {
   background-color: var(--color-type-a);
+}
+.subscription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscription-titel {
+  display: flex;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-footer-color);
+}
+.subscription-box {
+  /* position: relative;*/
+  outline: transparent;
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  background-color: var(--color-footer-background);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--color-type-c);
+  margin-right: 12px;
+}
+
+.subscription-btn {
+  gap: 10px;
+  margin-top: 36px;
 }
 /*portfolio.html*/
 /*main.section.filtr*/
