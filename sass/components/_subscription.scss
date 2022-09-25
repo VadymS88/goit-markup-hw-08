@@ -1,0 +1,30 @@
+.subscription {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 12px;
+}
+.subscription__titel {
+    display: flex;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--logo-footer-color);
+}
+.subscription__box {
+    outline: transparent;
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    background-color: var(--color-footer-background);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--color-type-c);
+}
+
+.subscription__btn {
+    gap: 10px;
+    cursor: pointer;
+}
