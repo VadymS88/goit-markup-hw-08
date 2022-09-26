@@ -8,34 +8,27 @@
     display: flex;
     align-items: baseline;
 }
-.logo2 {
-    color: var(--logo-color);
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
-    letter-spacing: 0.03em;
-}
-.logo-footer {
+
+.footer__logo {
     margin-bottom: 20px;
 }
-.adress-footer {
+.adress {
     padding-left: 0px;
 }
-.container-footer__footer1 {
+.footer__box {
     flex-grow: 1;
     margin-right: 70px;
 }
-.adress-footer__link {
+.adress__item {
     justify-content: flex-start;
 }
-.adress-footer__link:not(:last-child) {
+.adress__link:not(:last-child) {
     margin-bottom: 9px;
 }
-.logo-color {
+.logo__white {
     color: var(--logo-footer-color);
 }
-.adress {
+.adress__link {
     color: var(--logo-footer-color);
     font-style: normal;
     font-weight: 400;
@@ -43,16 +36,9 @@
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
 }
-.adress-contact {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    color: var(--color-adress-contact);
-}
-.footer__social {
-    margin-right: 93px;
+
+.footer__social-box {
+    margin-right: 88px;
 }
 .footer__text {
     margin-bottom: 20px;
@@ -62,37 +48,5 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-}
-.footer__social-list {
-    display: flex;
-    gap: 10px;
-    justify-content: normal;
-}
-.footer__social-media {
-    width: 44px;
-    height: 44px;
-}
-.footer__social-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-  
-        transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-            background-color: var(--color-type-a);
-        }
-    &:focus {
-            background-color: var(--color-type-a);
-        }
-}
-.footer__social-icon {
-    fill: var(--color-type-c);
 }
 

@@ -1,6 +1,5 @@
 @import './base/reset';
 @import './base/base';
-@import './base/colors';
 @import './base/container';
 @import './base/seaction';
 
@@ -15,5 +14,7 @@
 @import './components/work';
 @import './components/footer';
 @import './components/subscription';
+@import './components/social';
 
-@import './utils/mixins';
+@import './utils/variables';
+@import './utils/placeholder';

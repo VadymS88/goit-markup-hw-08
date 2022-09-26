@@ -1,4 +1,4 @@
-.section-hero {
+.hero {
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(to right,
@@ -10,15 +10,12 @@
     max-width: 1600px;
     margin-right: auto;
     margin-left: auto;
-}
-
-.section-hero {
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--color-hero-background);
 }
 
-.section-hero__hero {
+.hero__titel {
     margin-top: 0;
     margin-right: auto;
     margin-bottom: 30px;
@@ -38,8 +35,7 @@
     justify-content: space-around;
     border-radius: 4px;
 }
-
-.btn-section-hero {
+.hero__btn {
     color: var(--color-type-c);
     background-color: var(--color-type-a);
     font-family: "Roboto";

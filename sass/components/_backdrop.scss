@@ -1,219 +1,232 @@
-
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    transition: opacity 250ms;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: opacity 250ms;
 }
 
 .backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
-    background-color: var(--logo-footer-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: var(--logo-footer-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .modal__btn {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    top: 8px;
-    right: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: transparent;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .modal__svg-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    fill: var(--header-logo-color);
+  fill: var(--header-logo-color);
 
-    width: 11px;
-    height: 11px;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 11px;
+  height: 11px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__btn:hover .modal__svg-btn {
-    fill: var(--color-type-a);
+  fill: var(--color-type-a);
 }
 
 .register-form {
-    padding: 40px;
+  padding: 40px;
 }
 
 .register-form__titel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
 
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--color-type-b);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-type-b);
 }
 
 .register-form__label:not(:last-child) {
-    display: block;
-    margin-bottom: 10px;
-    position: relative;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
 }
 
 .register-form__field {
-    display: block;
-    margin-bottom: 4px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: var(--color-page);
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--color-page);
 }
 
 .register-form__group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .register-form__input {
-    width: 100%;
-    height: 40px;
-    padding-right: 38px;
-    padding-left: 38px;
-    outline: transparent;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 40px;
+  padding-right: 38px;
+  padding-left: 38px;
+  outline: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-
-    &:focus {
+  &:focus {
     border-color: var(--color-type-a);
-}
+  }
 
-    &:focus+.register-form__icon {
+  &:focus + .register-form__icon {
     fill: var(--color-type-a);
-}
+  }
 }
 .register-form__icon {
-    position: absolute;
-    bottom: 14px;
-    left: 12px;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  bottom: 14px;
+  left: 12px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .register-form__message {
-    display: block;
-    width: 100%;
-    resize: none;
-    outline: transparent;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding: 18px;
+  display: block;
+  width: 100%;
+  resize: none;
+  outline: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 18px;
 
-
-    &::placeholder {
+  &::placeholder {
     color: rgba(117, 117, 117, 0.5);
-}
+  }
 }
 .register-form__agreement {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .register-form__checkbox {
-    visibility: hidden;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .register-form__agreement {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
 }
 
 .icon-checked {
-    opacity: 0;
-    fill: var(--color-type-a);
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  fill: var(--color-type-a);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.register-form__checkbox:checked+.register-form__icons .icon-checked {
-    opacity: 1;
+.register-form__checkbox:checked + .register-form__icons .icon-checked {
+  opacity: 1;
 }
 
 .icon-unchecked {
-    padding-left: 51px;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 51px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.register-form__checkbox:checked+.register-form__icons .icon-unchecked {
-    opacity: 0;
+.register-form__checkbox:checked + .register-form__icons .icon-unchecked {
+  opacity: 0;
 }
 
-.register-form__checkbox:focus+.register-form__icons {
-    outline: 2px solid rgb(56, 87, 107);
-    outline-offset: 1px;
-    border-radius: 2px;
+.register-form__checkbox:focus + .register-form__icons {
+  outline: 2px solid rgb(56, 87, 107);
+  outline-offset: 1px;
+  border-radius: 2px;
 }
 
 .register-form__description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    user-select: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  user-select: none;
 }
 
 .register-form__link {
-    color: var(--color-type-a);
+  color: var(--color-type-a);
 }
 
 .register-form__btn {
-    display: block;
-    margin: auto;
-    cursor: pointer;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  color: var(--color-type-c);
+  background-color: var(--color-type-a);
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  border: transparent;
 }

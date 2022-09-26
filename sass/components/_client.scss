@@ -1,9 +1,9 @@
 /*Client*/
-.container-client__link {
+.clients__item {
     width: 170px;
     height: 92px;
 }
-.container-client__logo-link {
+.clients__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,38 +16,24 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:hover {
+        &:hover, &:focus {
             border: 1px solid var(--color-type-a);
         }
-        &:focus {
-            border: 1px solid var(--color-type-a);
-        }
-        &:hover .container-client__logo {
-            fill: var(--color-type-a);
-        }
-        &:focus .container-client__logo {
-            fill: var(--color-type-a);
-        }
+        
 }
-.container-client__logo {
+.clients__logo {
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .clients__link:hover &, .clients__link:focus & {
+            fill: var(--color-type-a);
+        }
 }
-.client-titel {
-    text-align: center;
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--color-type-b);
-}
-.container-client {
+.clients {
     display: flex;
     gap: 30px;
 }
-.container-client__logo {
+.clients__logo {
     fill: rgba(175, 177, 184, 1);
 }
