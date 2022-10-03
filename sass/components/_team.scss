@@ -1,18 +1,38 @@
 /*main seaction team*/
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 
 .team {
-  display: flex;
-  gap: 30px;
+  /*border: 1px solid tomato;*/
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+  }
+}
+.team__img {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 .team__item {
   background-color: var(--logo-footer-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+.team__item:last-child {
+  margin-bottom: 0;
 }
 .team__box {
   padding-top: 30px;

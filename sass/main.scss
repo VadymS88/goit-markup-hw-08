@@ -1,9 +1,13 @@
+@import './utils/variables';
+@import './utils/placeholder';
+
 @import './base/reset';
 @import './base/base';
 @import './base/container';
 @import './base/seaction';
 
 @import './components/header';
+@import './components/menu-btn';
 @import './components/hero';
 @import './components/backdrop';
 @import './components/benefits';
@@ -16,5 +20,3 @@
 @import './components/subscription';
 @import './components/social';
 
-@import './utils/variables';
-@import './utils/placeholder';

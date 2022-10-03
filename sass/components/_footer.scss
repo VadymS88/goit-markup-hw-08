@@ -1,52 +1,85 @@
 /*Footer*/
-.footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: var(--color-footer-background);
+.footer{
+  background-color: var(--color-footer-background);
 }
 .container-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--color-footer-background);
+  text-align: center;
+  @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+    /*flex-basis: calc((100% - 162px) / 2);*/
     align-items: baseline;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
 }
 
 .footer__logo {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .adress {
-    padding-left: 0px;
+  padding-left: 0px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 .footer__box {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
     flex-grow: 1;
     margin-right: 70px;
+    margin-bottom: 0;
+  }
 }
 .adress__item {
+  @media screen and (min-width: 1200px) {
     justify-content: flex-start;
+  }
+}
+.adress__item:not(:last-child) {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 8px;
+  }
 }
 .adress__link:not(:last-child) {
-    margin-bottom: 9px;
+  margin-bottom: 9px;
 }
 .logo__white {
-    color: var(--logo-footer-color);
+  color: var(--logo-footer-color);
 }
 .adress__link {
-    color: var(--logo-footer-color);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
+  color: var(--logo-footer-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
 }
 
 .footer__social-box {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
     margin-right: 88px;
+  }
 }
 .footer__text {
-    margin-bottom: 20px;
-    color: var(--color-type-c);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--color-type-c);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
-

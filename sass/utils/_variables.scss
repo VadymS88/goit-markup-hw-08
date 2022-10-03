@@ -18,7 +18,9 @@ btn-section-hero;  */
     --color-adress-contact: rgba(255, 255, 255, 0.6);
     --color-border-card: #eeeeee;
     /*flexbox*/
-    --container-width: 1200px;
+    --container-width-desktop: 1200px;
+    --container-width-tablet: 768px;
+    --container-width-mobile: 480px;
     --work-card: 30px;
     --width-work-pictuares: 368px;
 }

@@ -1,37 +1,50 @@
 /*Portfolio btn*/
 .filter__btn {
+  @media screen and (max-width: 767px) {
     display: flex;
-    justify-content: center;
-    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: start;
     margin-bottom: 50px;
+  }
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+  flex-wrap: nowrap;
 }
 
 .btn {
-    border: transparent;
-    padding-top: 6px;
-    padding-right: 22px;
-    padding-bottom: 6px;
-    padding-left: 22px;
-    border-radius: 4px;
-    color: var(--color-type-b);
-    background-color: var(--color-type-c);
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    transition-property: background-color, color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline;
+  border: transparent;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  border-radius: 4px;
+  color: var(--color-type-b);
+  background-color: var(--color-type-c);
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
+  &:hover,
+  &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: var(--logo-footer-color);
     background-color: var(--color-type-a);
     cursor: pointer;
+  }
 }
+.filter__btn-item:nth-child(3){
+    margin-right: 6px;
+    
+    
 }

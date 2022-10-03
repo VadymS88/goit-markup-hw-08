@@ -1,61 +1,61 @@
 /*team social*/
 .socials {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 .socials__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        background-color: var(--color-type-a);
-    }
+  &:hover,
+  &:focus {
+    background-color: var(--color-type-a);
+  }
 }
 
 .socials__icon {
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    .socials__link:hover &,
-    .socials__link:focus & {
-        fill: var(--color-type-c);
-    }
+  .socials__link:hover &,
+  .socials__link:focus & {
+    fill: var(--color-type-c);
+  }
 }
 
 .socials__icon {
-    fill: rgba(175, 177, 184, 1);
+  fill: rgba(175, 177, 184, 1);
 }
 /*footer social*/
 .social {
-    @extend .socials
+  @extend .socials;
 }
 
 .social__link {
-    @extend .socials__link;
-    
-    background-color: rgba(255, 255, 255, 0.1);
+  @extend .socials__link;
 
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(255, 255, 255, 0.1);
 
-    &:hover,
-    &:focus {
-        background-color: var(--color-type-a);
-    }
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-type-a);
+  }
 }
 
 .social__icon {
-    fill: var(--color-type-c);
+  fill: var(--color-type-c);
 }

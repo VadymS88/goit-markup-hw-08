@@ -58,6 +58,16 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#menu_24px"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -65,19 +75,19 @@
         <div class="container">
           <h1 class="section__titel-hidden">Фільтр</h1>
           <ul class="filter__btn">
-            <li>
+            <li class="filter__btn-item">
               <button type="button" class="btn">Усі</button>
             </li>
-            <li>
+            <li class="filter__btn-item">
               <button type="button" class="btn">Веб-сайти</button>
             </li>
-            <li>
+            <li class="filter__btn-item">
               <button type="button" class="btn">Додатки</button>
             </li>
-            <li>
+            <li class="filter__btn-item">
               <button type="button" class="btn">Дизайн</button>
             </li>
-            <li>
+            <li class="filter__btn-item">
               <button type="button" class="btn">Маркетинг</button>
             </li>
           </ul>
@@ -87,10 +97,16 @@
                 <div class="work__thumb">
                   <img
                     class="work__img"
-                    src="./images/portfolio/img.jpg"
+                    srcset="./images/portfolio/tablet/imgmd_354.jpg 354w,
+                    ./images/portfolio/desktop/imgl_370.jpg 370w,
+                    ./images/portfolio/mobile/imgsm_450.jpg 450w,
+                    ./images/portfolio/tablet/imgmd_708.jpg 708w,
+                    ./images/portfolio/desktop/imgl_740.jpg 740w,
+                    ./images/portfolio/mobile/imgsm_900.jpg 900w"
+                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/mobile/imgsm_450.jpg"
                     alt="home-page"
-                    width="370"
-                    height="294"
+                    
                   />
                   <div class="work__overlay">
                     <p class="work__overlay-description">
@@ -112,10 +128,15 @@
                 <div class="work__thumb">
                   <img
                     class="work__img"
-                    src="./images/portfolio/img1.jpg"
+                    srcset="./images/portfolio/tablet/imgmd_354-1.jpg 354w,
+                    ./images/portfolio/desktop/imgl_370-1.jpg 370w,
+                    ./images/portfolio/mobile/imgsm_450-1.jpg 450w,
+                    ./images/portfolio/tablet/imgmd_708-1.jpg 708w,
+                    ./images/portfolio/desktop/imgl_740-1.jpg 740w,
+                    ./images/portfolio/mobile/imgsm_900-1.jpg 900w"
+                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/mobile/imgsm_450-1.jpg"
                     alt="bascet-poster"
-                    width="370"
-                    height="294"
                   />
                   <div class="work__overlay">
                     <p class="work__overlay-description">
@@ -137,10 +158,15 @@
                 <div class="work__thumb">
                   <img
                     class="work__img"
-                    src="./images/portfolio/img2.jpg"
+                    srcset="./images/portfolio/tablet/imgmd_354-2.jpg 354w,
+                    ./images/portfolio/desktop/imgl_370-2.jpg 370w,
+                    ./images/portfolio/mobile/imgsm_450-2.jpg 450w,
+                    ./images/portfolio/tablet/imgmd_708-2.jpg 708w,
+                    ./images/portfolio/desktop/imgl_740-2.jpg 740w,
+                    ./images/portfolio/mobile/imgsm_900-2.jpg 900w"
+                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/mobile/imgsm_450-2.jpg"
                     alt="ad-seafood"
-                    width="390"
-                    height="294"
                   />
                   <div class="work__overlay">
                     <p class="work__overlay-description">
@@ -162,10 +188,15 @@
                 <div class="work__thumb">
                   <img
                     class="work__img"
-                    src="./images/portfolio/img3.jpg"
+                    srcset="./images/portfolio/tablet/imgmd_354-3.jpg 354w,
+                    ./images/portfolio/desktop/imgl_370-3.jpg 370w,
+                    ./images/portfolio/mobile/imgsm_450-3.jpg 450w,
+                    ./images/portfolio/tablet/imgmd_708-3.jpg 708w,
+                    ./images/portfolio/desktop/imgl_740-3.jpg 740w,
+                    ./images/portfolio/mobile/imgsm_900-3.jpg 900w"
+                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/mobile/imgsm_450-3.jpg"
                     alt="earspeakers"
-                    width="390"
-                    height="294"
                   />
                   <div class="work__overlay">
                     <p class="work__overlay-description">
@@ -187,10 +218,15 @@
                 <div class="work__thumb">
                   <img
                     class="work__img"
-                    src="./images/portfolio/img4.jpg"
+                    srcset="./images/portfolio/tablet/imgmd_354-4.jpg 354w,
+                    ./images/portfolio/desktop/imgl_370-4.jpg 370w,
+                    ./images/portfolio/mobile/imgsm_450-4.jpg 450w,
+                    ./images/portfolio/tablet/imgmd_708-4.jpg 708w,
+                    ./images/portfolio/desktop/imgl_740-4.jpg 740w,
+                    ./images/portfolio/mobile/imgsm_900-4.jpg 900w"
+                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/mobile/imgsm_450-4.jpg"
                     alt="boxes"
-                    width="390"
-                    height="294"
                   />
                   <div class="work__overlay">
                     <p class="work__overlay-description">
@@ -212,10 +248,15 @@
                 <div class="work__thumb">
                   <img
                     class="work__img"
-                    src="./images/portfolio/img5.jpg"
+                    srcset="./images/portfolio/tablet/imgmd_354-5.jpg 354w,
+                    ./images/portfolio/desktop/imgl_370-5.jpg 370w,
+                    ./images/portfolio/mobile/imgsm_450-5.jpg 450w,
+                    ./images/portfolio/tablet/imgmd_708-5.jpg 708w,
+                    ./images/portfolio/desktop/imgl_740-5.jpg 740w,
+                    ./images/portfolio/mobile/imgsm_900-5.jpg 900w"
+                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/mobile/imgsm_450-5.jpg"
                     alt="monitor"
-                    width="390"
-                    height="294"
                   />
                   <div class="work__overlay">
                     <p class="work__overlay-description">
@@ -240,10 +281,15 @@
                 <div class="work__thumb">
                   <img
                     class="work__img"
-                    src="./images/portfolio/img6.jpg"
+                    srcset="./images/portfolio/tablet/imgmd_354-6.jpg 354w,
+                    ./images/portfolio/desktop/imgl_370-6.jpg 370w,
+                    ./images/portfolio/mobile/imgsm_450-6.jpg 450w,
+                    ./images/portfolio/tablet/imgmd_708-6.jpg 708w,
+                    ./images/portfolio/desktop/imgl_740-6.jpg 740w,
+                    ./images/portfolio/mobile/imgsm_900-6.jpg 900w"
+                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/mobile/imgsm_450-6.jpg"
                     alt="book"
-                    width="390"
-                    height="294"
                   />
                   <div class="work__overlay">
                     <p class="work__overlay-description">
@@ -265,7 +311,14 @@
                 <div class="work__thumb">
                   <img
                     class="work__img"
-                    src="./images/portfolio/img7.jpg"
+                    srcset="./images/portfolio/tablet/imgmd_354-7.jpg 354w,
+                    ./images/portfolio/desktop/imgl_370-7.jpg 370w,
+                    ./images/portfolio/mobile/imgsm_450-7.jpg 450w,
+                    ./images/portfolio/tablet/imgmd_708-7.jpg 708w,
+                    ./images/portfolio/desktop/imgl_740-7.jpg 740w,
+                    ./images/portfolio/mobile/imgsm_900-7.jpg 900w"
+                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/mobile/imgsm_450-7.jpg"
                     alt="label"
                     width="390"
                     height="294"
@@ -290,7 +343,14 @@
                 <div class="work__thumb">
                   <img
                     class="work__img"
-                    src="./images/portfolio/img8.jpg"
+                    srcset="./images/portfolio/tablet/imgmd_354-8.jpg 354w,
+                    ./images/portfolio/desktop/imgl_370-8.jpg 370w,
+                    ./images/portfolio/mobile/imgsm_450-8.jpg 450w,
+                    ./images/portfolio/tablet/imgmd_708-8.jpg 708w,
+                    ./images/portfolio/desktop/imgl_740-8.jpg 740w,
+                    ./images/portfolio/mobile/imgsm_900-8.jpg 900w"
+                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/mobile/imgsm_450-8.jpg"
                     alt="laptop"
                     width="390"
                     height="294"
@@ -423,6 +483,86 @@
         </form>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#close_24px"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu"> 
+        <li class="mobile-menu__item">
+          <a class="mobile__link " href="./index.html"> Студія </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile__link mobile__link-curent" href="./portfolio.html"> Портфоліо </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile__link" href=""> Контакти </a>
+        </li>
+      </ul>
+<ul class="mobile-contacts">
+
+   <li class="mobile-contacts__item">
+          <a class="mobile-contacts__tlf contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__mail contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+       
+</ul>
+        
+         <ul class="mobile-socials">
+          <li>
+          <a class="mobile-socials__link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="instagram">
+                      Instagram</a>
+        </li>
+        <span class="line">
+        </span>
+        <li>
+          <a class="mobile-socials__link"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="twitter">
+                      Twitter</a>
+        </li>
+        <span class="line">
+        </span>
+        <li>
+          <a class="mobile-socials__link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="facebook">
+                      Facebook</a>
+        </li>
+        <span class="line">
+        </span>
+         <li>
+          <a class="mobile-socials__link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="linkedin">
+                      LinkedIn</a>
+        </li>
+         </ul>
+        
+             
+      </ul>
+    </div>
+    <script src="./modal.js"></script>
+     <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+   <script defer src="mobile-menu.js"></script>
   </body>
 </html>

@@ -16,10 +16,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-<link rel="stylesheet" href="./css/main.min.css" />
+<link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header block">
       <div class="container container__header">
         <nav class="nav">
           <a href="./index.html" class="logo">
@@ -54,6 +54,13 @@
               >
           </li>
         </ul>
+        <button class="menu-btn js-open-menu" type="button" 
+        aria-expanded="false"
+          aria-controls="mobile-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#menu_24px"></use>
+        </svg>
+      </button>
       </div>
     </header>
     <main>
@@ -221,30 +228,33 @@
             <li class="features__item">
               <img
                 class="features__img"
-                src="./images/main/img.jpg"
+                srcset="./images/features/img_370.jpg 370w,
+                ./images/features/img_740.jpg 740w"
+                src="./images/features/img1_370.jpg"
                 alt="photo"
-                width="370"
-                height="294"
+                
               />
               <p class="features__text">Десктопні додатки</p>
             </li>
             <li class="features__item">
               <img
                 class="features_img"
-                src="./images/main/img1.jpg"
+                srcset="./images/features/img1_370.jpg 370w,
+                ./images/features/img1_740.jpg 740w"
+                src="./images/features/img1_370.jpg"
                 alt="photo1"
-                width="370"
-                height="294"
+                
               />
               <p class="features__text">Мобільні додатки</p>
             </li>
             <li class="features__item">
               <img
                 class="features__img"
-                src="./images/main/img2.jpg"
+                srcset="./images/features/img2_370.jpg 370w,
+                ./images/features/img2_740.jpg 740w"
+                src="./images/features/img2_370.jpg"
                 alt="photo2"
-                width="370"
-                height="294"
+                
               />
               <p class="features__text">Дизайнерські рішення</p>
             </li>
@@ -258,10 +268,15 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/main/product-designer.jpg"
+                srcset="./images/team/desktop/product_l_270.jpg 270w,
+                ./images/team/tablet/product_md_354.jpg 354w,
+                 ./images/team/mobile/imgproduct_d_450.jpg 450w, 
+                 ./images/team/desktop/product_l_540.jpg 540w,
+                 ./images/team/tablet/product_md_708.jpg 708w,
+                 ./images/team/mobile/imgproduct_d_900.jpg 900w"
+                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/mobile/imgproduct_d_450.jpg"
                 alt="comands"
-                width="270"
-                height="260"
               />
               <div class="team__box">
                 <h3 class="team__titel">Ігор Дем'яненко</h3>
@@ -325,10 +340,15 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/main/frontend-developer.jpg"
+                srcset="./images/team/desktop/developer_md_270.jpg 270w,
+                ./images/team/tablet/developer_md_354.jpg 354w,
+                ./images/team/mobile/imgdeveloper_450.jpg 450w,
+                ./images/team/desktop/developer_md_540.jpg 540w,
+                ./images/team/tablet/developer_md_708.jpg 708w,
+                 ./images/team/mobile/imgdeveloper_900.jpg 900w"
+                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/mobile/imgdeveloper_450.jpg"
                 alt="comands"
-                width="270"
-                height="260"
               />
               <div class="team__box">
                 <h3 class="team__titel">Ольга Рєпіна</h3>
@@ -392,10 +412,15 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/main/marketing.jpg"
+                srcset="./images/team/desktop/marketing_md_270.jpg 270w,
+                ./images/team/tablet/marketing_md_354.jpg 354w,
+                ./images/team/mobile/imgmarketing_450.jpg 450w,
+                ./images/team/desktop/marketing_md_540.jpg 540w,
+                ./images/team/tablet/marketing_md_708.jpg 708w,
+                 ./images/team/mobile/imgmarketing_900.jpg 900w"
+                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/mobile/imgmarketing_450.jpg"
                 alt="comands"
-                width="270"
-                height="260"
               />
               <div class="team__box">
                 <h3 class="team__titel">Микола Тарасов</h3>
@@ -459,10 +484,15 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/main/ui-designer.jpg"
+                srcset="./images/team/desktop/ui_designer_md_270.jpg 270w,
+                ./images/team/tablet/ui_designer_md_354.jpg 354w,
+                ./images/team/mobile/imgui_designer_450.jpg 450w,
+                ./images/team/desktop/ui_designer_md_540.jpg 540w,
+                ./images/team/tablet/ui_designer_md_708.jpg 708w,
+                 ./images/team/mobile/imgui_designer_900.jpg 900w"
+                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/mobile/imgui_designer_450.jpg"
                 alt="comands"
-                width="270"
-                height="260"
               />
               <div class="team__box">
                 <h3 class="team__titel">Михайло Єрмаков</h3>
@@ -592,8 +622,7 @@
                   href="https://goo.gl/maps/Kv75vBN5cNTdLG7P8"
                   target="_blank"
                   rel="noopener no refferent"
-                >
-                  м. Київ, пр-т Лесі Українки, 26
+                >м. Київ, пр-т Лесі Українки, 26
                 </a>
               </li>
               <li class="adress__item">
@@ -681,6 +710,87 @@
         </form>
       </div>
     </footer>
+    
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#close_24px"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu"> 
+        <li class="mobile-menu__item">
+          <a class="mobile__link mobile__link-curent" href="./index.html"> Студія </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile__link" href="./portfolio.html"> Портфоліо </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile__link" href=""> Контакти </a>
+        </li>
+      </ul>
+<ul class="mobile-contacts">
+
+   <li class="mobile-contacts__item">
+          <a class="mobile-contacts__tlf contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__mail contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+       
+</ul>
+        
+         <ul class="mobile-socials">
+          <li>
+          <a class="mobile-socials__link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="instagram">
+                      Instagram</a>
+        </li>
+        <span class="line">
+        </span>
+        <li>
+          <a class="mobile-socials__link"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="twitter">
+                      Twitter</a>
+        </li>
+        <span class="line">
+        </span>
+        <li>
+          <a class="mobile-socials__link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="facebook">
+                      Facebook</a>
+        </li>
+        <span class="line">
+        </span>
+         <li>
+          <a class="mobile-socials__link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="linkedin">
+                      LinkedIn</a>
+        </li>
+         </ul>
+        
+             
+      </ul>
+    </div>
     <script src="./modal.js"></script>
+     <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="mobile-menu.js"></script>
   </body>
 </html>
