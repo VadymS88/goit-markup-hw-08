@@ -8,7 +8,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero/img_sm@1x.jpg);
+      url(../../images/hero/png/img_sm@1x.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -18,7 +18,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/hero/img_sm@2x.jpg);
+        url(../../images/hero/png/img_sm@2x.png);
     }
   }
   @media screen and (min-width: 481px) {
@@ -37,7 +37,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/hero/img_md@2x.jpg);
+        url(../../images/hero/png/img_md@2x.png);
     }
   }
   @media screen and (min-width: 769px) {
@@ -56,7 +56,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/hero/img_sm@2x.jpg);
+        url(../../images/hero/png/img_l@2x.png);
     }
   }
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
