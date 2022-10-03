@@ -958,7 +958,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 60px;
+    gap: 30px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -976,8 +976,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .benefits__item {
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
     width: 354px;
   }
 }

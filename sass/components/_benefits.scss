@@ -1,7 +1,7 @@
 .benefits {
   @media screen and (min-width: 768px) {
     display: flex;
-    gap: 60px;
+    gap: 30px;
     flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
@@ -12,7 +12,7 @@
 }
 .benefits__item {
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
     width: 354px;
   }
 }
