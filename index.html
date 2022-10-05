@@ -11,15 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-<link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="header block">
+    <header class="header">
       <div class="container container__header">
         <nav class="nav">
           <a href="./index.html" class="logo">
@@ -27,40 +26,48 @@
           </a>
           <ul class="site-nav header__nav">
             <li class="site-nav__item">
-                <a class="site-nav__link site-nav__link-curent" href="./index.html"> Студія </a>
+              <a
+                class="site-nav__link site-nav__link-curent"
+                href="./index.html"
+              >
+                Студія
+              </a>
             </li>
             <li>
               <a class="site-nav__link" href="./portfolio.html"> Портфоліо </a>
             </li>
             <li>
-                <a class="site-nav__link" href=""> Контакти </a>
+              <a class="site-nav__link" href=""> Контакти </a>
             </li>
           </ul>
         </nav>
         <ul class="contacts">
           <li class="contacts__item">
-              <a class="contacts__link" href="mailto:info@devstudio.com">
-                <svg class="contacts__icon" width="16" height="12">
-                  <use href="./images/icons.svg#mail"></use>
-                </svg>
-                info@devstudio.com</a
-              >
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/icons.svg#mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
           <li class="contacts__item">
-              <a class="contacts__link" href="tel:+380961111111"
-                ><svg class="contacts__icon" width="10" height="16">
-                  <use href="./images/icons.svg#smartphone"></use></svg
-                >+38 096 111 11 11</a
-              >
+            <a class="contacts__link" href="tel:+380961111111"
+              ><svg class="contacts__icon" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-        <button class="menu-btn js-open-menu" type="button" 
-        aria-expanded="false"
-          aria-controls="mobile-menu">
-        <svg width="40" height="40">
-          <use href="./images/icons.svg#menu_24px"></use>
-        </svg>
-      </button>
+        <button
+          class="menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24" height="16">
+            <use href="./images/icons.svg#menu_24px"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -82,7 +89,12 @@
               <use href="./images/icons.svg#close"></use>
             </svg>
           </button>
-          <form class="register-form" name="register-form" autocomplete="on" novalidate>
+          <form
+            class="register-form"
+            name="register-form"
+            autocomplete="on"
+            novalidate
+          >
             <strong class="register-form__titel"
               >Залиште свої дані, ми вам передзвонимо</strong
             >
@@ -141,8 +153,8 @@
               <input
                 class="register-form__checkbox visuall-hidden"
                 type="checkbox"
-                name=""
-                id=""
+                name="agreement"
+                id="register-form__agreement"
               />
               <svg class="register-form__icons" width="16" height="15">
                 <use class="icon-checked" href="./images/icons.svg#check"></use>
@@ -166,7 +178,7 @@
         </div>
       </div>
 
-       <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="section__titel-hidden">Наші переваги</h2>
           <ul class="benefits">
@@ -212,7 +224,7 @@
                 </svg>
               </div>
               <h3 class="benefits__titel">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="benefits__text"">
+              <p class="benefits__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -228,33 +240,39 @@
             <li class="features__item">
               <img
                 class="features__img"
-                srcset="./images/features/img_370.jpg 370w,
-                ./images/features/img_740.jpg 740w"
+                srcset="
+                  ./images/features/img_370.jpg 370w,
+                  ./images/features/img_740.jpg 740w
+                "
+                sizes="370px"
                 src="./images/features/img1_370.jpg"
                 alt="photo"
-                
               />
               <p class="features__text">Десктопні додатки</p>
             </li>
             <li class="features__item">
               <img
                 class="features_img"
-                srcset="./images/features/img1_370.jpg 370w,
-                ./images/features/img1_740.jpg 740w"
+                srcset="
+                  ./images/features/img1_370.jpg 370w,
+                  ./images/features/img1_740.jpg 740w
+                "
+                sizes="370px"
                 src="./images/features/img1_370.jpg"
                 alt="photo1"
-                
               />
               <p class="features__text">Мобільні додатки</p>
             </li>
             <li class="features__item">
               <img
                 class="features__img"
-                srcset="./images/features/img2_370.jpg 370w,
-                ./images/features/img2_740.jpg 740w"
+                srcset="
+                  ./images/features/img2_370.jpg 370w,
+                  ./images/features/img2_740.jpg 740w
+                "
+                sizes="370px"
                 src="./images/features/img2_370.jpg"
                 alt="photo2"
-                
               />
               <p class="features__text">Дизайнерські рішення</p>
             </li>
@@ -268,13 +286,15 @@
             <li class="team__item">
               <img
                 class="team__img"
-                srcset="./images/team/desktop/product_l_270.jpg 270w,
-                ./images/team/tablet/product_md_354.jpg 354w,
-                 ./images/team/mobile/imgproduct_d_450.jpg 450w, 
-                 ./images/team/desktop/product_l_540.jpg 540w,
-                 ./images/team/tablet/product_md_708.jpg 708w,
-                 ./images/team/mobile/imgproduct_d_900.jpg 900w"
-                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                srcset="
+                  ./images/team/desktop/product_l_270.jpg   270w,
+                  ./images/team/tablet/product_md_354.jpg   354w,
+                  ./images/team/mobile/imgproduct_d_450.jpg 450w,
+                  ./images/team/desktop/product_l_540.jpg   540w,
+                  ./images/team/tablet/product_md_708.jpg   708w,
+                  ./images/team/mobile/imgproduct_d_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 src="./images/team/mobile/imgproduct_d_450.jpg"
                 alt="comands"
               />
@@ -340,13 +360,15 @@
             <li class="team__item">
               <img
                 class="team__img"
-                srcset="./images/team/desktop/developer_l_270.jpg 270w,
-                ./images/team/tablet/developer_md_354.jpg 354w,
-                ./images/team/mobile/imgdeveloper_450.jpg 450w,
-                ./images/team/desktop/developer_l_540.jpg 540w,
-                ./images/team/tablet/developer_md_708.jpg 708w,
-                 ./images/team/mobile/imgdeveloper_900.jpg 900w"
-                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                srcset="
+                  ./images/team/desktop/developer_l_270.jpg 270w,
+                  ./images/team/tablet/developer_md_354.jpg 354w,
+                  ./images/team/mobile/imgdeveloper_450.jpg 450w,
+                  ./images/team/desktop/developer_l_540.jpg 540w,
+                  ./images/team/tablet/developer_md_708.jpg 708w,
+                  ./images/team/mobile/imgdeveloper_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 src="./images/team/mobile/imgdeveloper_450.jpg"
                 alt="comands"
               />
@@ -412,13 +434,15 @@
             <li class="team__item">
               <img
                 class="team__img"
-                srcset="./images/team/desktop/marketing_l_270.jpg 270w,
-                ./images/team/tablet/marketing_md_354.jpg 354w,
-                ./images/team/mobile/imgmarketing_450.jpg 450w,
-                ./images/team/desktop/marketing_l_540.jpg 540w,
-                ./images/team/tablet/marketing_md_708.jpg 708w,
-                 ./images/team/mobile/imgmarketing_900.jpg 900w"
-                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                srcset="
+                  ./images/team/desktop/marketing_l_270.jpg 270w,
+                  ./images/team/tablet/marketing_md_354.jpg 354w,
+                  ./images/team/mobile/imgmarketing_450.jpg 450w,
+                  ./images/team/desktop/marketing_l_540.jpg 540w,
+                  ./images/team/tablet/marketing_md_708.jpg 708w,
+                  ./images/team/mobile/imgmarketing_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 src="./images/team/mobile/imgmarketing_450.jpg"
                 alt="comands"
               />
@@ -484,13 +508,15 @@
             <li class="team__item">
               <img
                 class="team__img"
-                srcset="./images/team/desktop/ui_designer_l_270.jpg 270w,
-                ./images/team/tablet/ui_designer_md_354.jpg 354w,
-                ./images/team/mobile/imgui_designer_450.jpg 450w,
-                images\team\desktop\ui_designer_l_540.jpg 540w,
-                ./images/team/tablet/ui_designer_md_708.jpg 708w,
-                 ./images/team/mobile/imgui_designer_900.jpg 900w"
-                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                srcset="
+                  ./images/team/desktop/ui_designer_l_270.jpg 270w,
+                  ./images/team/tablet/ui_designer_md_354.jpg 354w,
+                  ./images/team/mobile/imgui_designer_450.jpg 450w,
+                  ./images/team/desktop/ui_designer_l_540.jpg 540w,
+                  ./images/team/tablet/ui_designer_md_708.jpg 708w,
+                  ./images/team/mobile/imgui_designer_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 src="./images/team/mobile/imgui_designer_450.jpg"
                 alt="comands"
               />
@@ -610,7 +636,7 @@
       <div class="container container-footer">
         <div class="footer__box">
           <div class="footer__logo">
-            <a href="./index.html" class="logo">
+            <a href="./index.html" class="footer-logo">
               Web<span class="logo__white">Studio</span>
             </a>
           </div>
@@ -622,16 +648,18 @@
                   href="https://goo.gl/maps/Kv75vBN5cNTdLG7P8"
                   target="_blank"
                   rel="noopener no refferent"
-                >м. Київ, пр-т Лесі Українки, 26
+                  >м. Київ, пр-т Лесі Українки, 26
                 </a>
               </li>
               <li class="adress__item">
-                <a class="contacts__link" href="mailto:info@devstudio.com"
+                <a
+                  class="footer__contacts-link"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="adress__item">
-                <a class="contacts__link" href="tel:+380961111111"
+                <a class="footer__contacts-link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -698,7 +726,11 @@
         <form class="subscription">
           <label class="subscription__label">
             <span class="subscription__titel">Підпишіться на розсилку</span>
-            <input type="email" class="subscription__input" placeholder="E-mail" />
+            <input
+              type="email"
+              class="subscription__input"
+              placeholder="E-mail"
+            />
           </label>
 
           <button class="subscription__btn hero__btn" type="submit">
@@ -710,17 +742,19 @@
         </form>
       </div>
     </footer>
-    
+
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg width="40" height="40">
-          <use href="./images/icons.svg#close_24px"></use>
+          <use href="./images/icons.svg#close_40px"></use>
         </svg>
       </button>
 
-      <ul class="mobile-menu"> 
+      <ul class="mobile-menu">
         <li class="mobile-menu__item">
-          <a class="mobile__link mobile__link-curent" href="./index.html"> Студія </a>
+          <a class="mobile__link mobile__link-curent" href="./index.html">
+            Студія
+          </a>
         </li>
         <li class="mobile-menu__item">
           <a class="mobile__link" href="./portfolio.html"> Портфоліо </a>
@@ -729,63 +763,75 @@
           <a class="mobile__link" href=""> Контакти </a>
         </li>
       </ul>
-<ul class="mobile-contacts">
-
-   <li class="mobile-contacts__item">
-          <a class="mobile-contacts__tlf contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a
+            class="mobile-contacts__tlf contacts__link"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
         </li>
         <li class="mobile-contacts__item">
-          <a class="mobile-contacts__mail contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a
+            class="mobile-contacts__mail contacts__link"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
         </li>
-       
-</ul>
-        
-         <ul class="mobile-socials">
-          <li>
-          <a class="mobile-socials__link"
-                      href="https://www.instagram.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="instagram">
-                      Instagram</a>
-        </li>
-        <span class="line">
-        </span>
+      </ul>
+
+      <ul class="mobile-socials">
         <li>
-          <a class="mobile-socials__link"
-                      href="https://twitter.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="twitter">
-                      Twitter</a>
+          <a
+            class="mobile-socials__link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
+            Instagram</a
+          >
         </li>
-        <span class="line">
-        </span>
+        <li class="line"></li>
         <li>
-          <a class="mobile-socials__link"
-                      href="https://www.facebook.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="facebook">
-                      Facebook</a>
+          <a
+            class="mobile-socials__link"
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter"
+          >
+            Twitter</a
+          >
         </li>
-        <span class="line">
-        </span>
-         <li>
-          <a class="mobile-socials__link"
-                      href="https://www.linkedin.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="linkedin">
-                      LinkedIn</a>
+        <li class="line"></li>
+        <li>
+          <a
+            class="mobile-socials__link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="facebook"
+          >
+            Facebook</a
+          >
         </li>
-         </ul>
-        
-             
+        <li class="line"></li>
+        <li>
+          <a
+            class="mobile-socials__link"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            LinkedIn</a
+          >
+        </li>
       </ul>
     </div>
     <script src="./modal.js"></script>
-     <script
+    <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="

@@ -15,11 +15,11 @@
     flex-wrap: nowrap;
   }
 }
-.team__img {
+/*.team__img {
   @media screen and (max-width: 767px) {
-    width: 100%;
+    width: 480px;
   }
-}
+}*/
 .team__item {
   background-color: var(--logo-footer-color);
   border-radius: 0px 0px 4px 4px;

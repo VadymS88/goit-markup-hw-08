@@ -1,13 +1,13 @@
 /*Footer*/
-.footer{
+.footer {
   background-color: var(--color-footer-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: var(--color-footer-background);
-  text-align: center;
+  /*background-color: var(--color-footer-background);*/
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -25,21 +25,48 @@
 .footer__logo {
   margin-bottom: 20px;
 }
+.footer-logo {
+  color: var(--logo-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.03em;
+}
 .adress {
   padding-left: 0px;
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
+}
+.footer__contacts-link {
+  font-style: normal;
+  align-items: center;
+  color: var(--color-page);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--color-type-a);
   }
 }
+
 .footer__box {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 60px;
+    text-align: center;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+    text-align: center;
   }
 
   @media screen and (min-width: 1200px) {
-    flex-grow: 1;
     margin-right: 70px;
-    margin-bottom: 0;
+    /*margin-bottom: 0;*/
   }
 }
 .adress__item {
@@ -51,10 +78,9 @@
   @media screen and (max-width: 1199px) {
     margin-bottom: 8px;
   }
-}
-.adress__link:not(:last-child) {
   margin-bottom: 9px;
 }
+
 .logo__white {
   color: var(--logo-footer-color);
 }
@@ -70,6 +96,9 @@
 .footer__social-box {
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
+  }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 88px;
